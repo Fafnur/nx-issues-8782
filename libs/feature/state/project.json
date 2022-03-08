@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/feature/state",
+  "sourceRoot": "libs/feature/state/src",
+  "prefix": "sample",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature/state"],
+      "options": {
+        "jestConfig": "libs/feature/state/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/state/src/**/*.ts",
+          "libs/feature/state/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
